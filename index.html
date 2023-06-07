@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>호텔 안내문구</title>
+  <script>
+    function displayMessage() {
+      var currentTime = new Date();
+      var hour = currentTime.getHours();
+      var url = "";
+
+      if (hour >= 5 && hour < 11) {
+        url = "C:\Users\조현\Desktop\홈페이지 만들기\05-11\05-11.html";
+      } else if (hour >= 11 && hour < 15) {
+        url = "C:\Users\조현\Desktop\홈페이지 만들기\11-15\11-15.html";
+      } else if (hour >= 15 && hour < 23) {
+        url = "C:\Users\조현\Desktop\홈페이지 만들기\15-23_셀프체크인\15-23 셀프체크인.html";
+      } else {
+        url = "‪C:\Users\조현\Desktop\홈페이지 만들기\23-05\23-05.html";
+      }
+
+      // 링크를 자동으로 보여주는 기능
+      window.location.href = url;
+    }
+
+    // 페이지가 로드될 때마다 메시지 표시 함수 호출
+    window.onload = function() {
+      displayMessage();
+    };
+  </script>
+</head>
+<body>
+</body>
+</html>

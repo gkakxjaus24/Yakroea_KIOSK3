@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .flex-container {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .flex-item {
+      border: none;
+      flex: 1;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.2em; /* 추가된 스타일: 글자 폰트 크기 약간 증가 */
+      text-align : center;
+    }
+
+    .text-animation {
+      position: absolute;
+      top: 10px;
+      left: 100%;
+      white-space: nowrap;
+      animation: slide-right 30s linear infinite;
+      font-weight: bold;
+      color: red;
+    }
+
+    @keyframes slide-right {
+      0% { left: 100%; }
+      100% { left: -100%; }
+    }
+    
+    .button {
+      padding: 10px 20px;
+      background-color: #fff;
+      color: #000;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      font-weight: normal;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+
+    .button:hover, .button:focus {
+      font-weight: bold;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <div class="flex-container">
+    <div class="flex-item">
+      <div class="text-animation">
+        This hostel is currently running an automated check-in system. Please read the hostel rules carefully. In order to provide our guests with the best possible prices, we have taken personnel costs into account and are operating without reception staff. <br> 为了提供更具性价比的服务，本店使用无人运营方式以节约人工成本。请仔细阅读各处粘贴的指南。如需帮助，请随时拨打服务电话。   <br> 当ホステルは無人で運営しております。あちこちにある案内文をよく読んで下さる様お願いたします。これにより、人件費を節約し、皆さんがより安い価格でゲストハウスを利用できるようにしています。ですが 、何か必要なものがありましたらいつでもお電話ください。<br> 저희 호스텔은 무인으로 운영하고 있습니다. 곳곳에 있는 안내문을 잘 읽어보세요. 이것은 인건비를 절약해서 여러분들에게 좀 더 저렴한 가격으로 게스트하우스를 이용할 수 있게 하기 위함입니다. 하지만 도움이 필요하면 언제든지 전화주세요.
+        </div>
+    </div>
+    <div class="flex-item">There is no further check out procedure/ 没有退房手续，可自助退房。<br>チェックアウトの手続きは特にありません/ 체크아웃 절차 따로 없습니다</div>
+    <div class="flex-item">Have a nice day/ 期待您的再次光临  <br>ありがとうございました/ 안녕히 가세요</div>
+    <div class="flex-item">Luggage can be stored under the table across from the reception desk <br>行李可在柜台对面保管   <br>お荷物はカウンターの向かい側に保管できます <br>짐은 카운터 맞은편에 보관 가능합니다</div>
+    <div class="flex-item">
+      <a href="your_link_here" class="button" style="border: 1px solid black;">HELP</a>
+    </div>
+  </div>
+</body>
+</html>
